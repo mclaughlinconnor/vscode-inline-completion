@@ -27,7 +27,6 @@ import {
 // Create a connection for the server, using Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
 const connection = createConnection(ProposedFeatures.all);
-createConnection
 
 // Create a simple text document manager.
 const documents = new TextDocuments(TextDocument);
