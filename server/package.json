@@ -1,0 +1,19 @@
+{
+	"name": "vscode-inline-completion-server",
+	"description": "Example implementation of a language server in node.",
+	"version": "1.0.0",
+	"author": "mclaughlinconnor",
+	"license": "MIT",
+	"engines": {
+		"node": "*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mclaughlinconnor/vscode-inline-completion"
+	},
+	"dependencies": {
+		"vscode-languageserver": "^10.0.0-next.14",
+		"vscode-languageserver-textdocument": "^1.0.11"
+	},
+	"scripts": {}
+}

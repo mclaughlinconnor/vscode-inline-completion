@@ -1,0 +1,30 @@
+{
+	"name": "vscode-inline-completion",
+	"description": "Inline completion plugin for vscode",
+	"author": "mclaughlinconnor",
+	"license": "MIT",
+	"version": "1.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mclaughlinconnor/vscode-inline-completion"
+	},
+	"publisher": "mclaughlinconnor",
+	"categories": [],
+	"engines": {
+		"vscode": "^1.100.0"
+	},
+	"activationEvents": [
+		"onLanguage:plaintext"
+	],
+	"main": "./client/out/extension",
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -b",
+		"watch": "tsc -b -w",
+		"postinstall": "cd client && npm install && cd ../server && npm install && cd .."
+	},
+	"devDependencies": {
+		"@types/node": "^22",
+		"typescript": "^5.9.2"
+	}
+}
